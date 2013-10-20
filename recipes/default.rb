@@ -15,11 +15,13 @@ end
 %w{gnome-do xfce4 xfce4-battery-plugin xfce4-systemload-plugin}.each do |base|
   package base do
     action :install
+  end
 end
 #
 %w{ibus-mozc mozc-server mozc-utils-gui vim tmux ruby1.9.1 vagrant virtualbox git subversion lxc tree}.each do |app|
   package base do
     action :install
+  end
 end
 #
 bash "setup other app's repos" do
@@ -38,6 +40,7 @@ end
 %w{google-chrome-stable lxc-docker shutter}.each do |other_pkg|
   package other_pkg do
     action :install
+  end
 end
 
 #
