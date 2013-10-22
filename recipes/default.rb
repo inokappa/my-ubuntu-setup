@@ -18,7 +18,7 @@ end
   end
 end
 #
-%w{ibus-mozc mozc-server mozc-utils-gui vim tmux ruby1.9.1 ruby1.9.1-dev vagrant virtualbox git subversion lxc tree}.each do |app|
+%w{ibus-mozc mozc-server mozc-utils-gui vim tmux ruby1.9.1 ruby1.9.1-dev vagrant virtualbox git subversion lxc tree wine}.each do |app|
   package base do
     action :install
   end
